@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="../login.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">信息完善</h1>
+			<button id='save' class=" mui-pull-right mui-btn-link">保存</button>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="">
+						姓名<div class="listinfo">冉</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						年龄<div class="listinfo">24</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						性别<div class="listinfo">男</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						政治面貌<div class="listinfo">群众</div>
+					</a>
+				</li>
+				<li class="mui-table-view-divider"></li>
+				<li class="mui-table-view-cell">
+					<a class="">
+						身份证号码<div class="listinfo">110101</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						所属楼宇<div class="listinfo">未设置</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="">
+						公司职务<div class="listinfo">UI设计师</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="">
+						公司职级<div class="listinfo">UED总监</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						爱好
+					</a>
+				</li>
+				<li class="mui-table-view-divider"></li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						家庭住址
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</html>
