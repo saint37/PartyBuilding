@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css"/>
+	</head>
+	<body>
+		<div class="calendar">
+			<header class="mui-bar mui-bar-nav">
+				<a href="../index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">签到</h1>
+			</header>
+			<div class="mui-content">
+				<div class="circle">
+					<p>本月</p>
+					<p>已经连续签到<span>&ensp;20&ensp;</span>天</p>
+					<button id="checkin-rule" class="mui-btn">签到规则</button>
+				</div>
+				<p class="count">*本月已累计签到<span>22</span>天</p>
+			</div>
+			<div class="checkin-wrap">
+				<button class="mui-btn checkin-btn">点击签到</button>
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/calendar.js"></script>
+	<script type="text/javascript">
+		var cld = new Calendar({
+			el: 'body',
+			value: '', // 默认为new Date();
+			callback: function(obj) {
+				console.log(JSON.stringify(obj));
+			}
+		})
+	</script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		document.getElementById("checkin-rule").addEventListener('tap', function() {
+				mui.alert('1. 嗷嗷嗷嗷嗷嗷<br>2. 喵喵喵喵喵喵', '签到规则', function() {
+				});
+			});
+	</script>
+</html>

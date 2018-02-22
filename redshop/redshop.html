@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	
+	<body class="index">
+		<header class="mui-bar mui-bar-nav vip" style="padding-right: 15px;">
+			<h1 class="mui-title">红工坊</h1>
+		</header>
+		<div class="mui-content redshop">
+			<div class="banner"><img src="../img/redshop/banner.png"></div>
+			<!--首页导航-->
+			<nav class="nav-bar mui-bar mui-bar-tab">
+			      <a id="defaultTab" class="mui-tab-item mui-active" href="templete/home1.html">
+		                <span><img src="../img/redshop/icon2.png" /></span>
+		                <span class="mui-tab-label">学习充电</span>
+			       </a>
+			      <a class="mui-tab-item" href="join.html">
+		                <span><img src="../img/redshop/icon1.png"/></span>
+		                <span class="mui-tab-label">我要入党</span>
+			      </a>
+			      <a class="mui-tab-item" href="find.html">
+		                <span><img src="../img/redshop/icon3.png"/></span>
+		                <span class="mui-tab-label">找组织</span>
+			       </a>
+			      <a  class="mui-tab-item" href="fee.html">
+		                <span><img src="../img/redshop/icon4.png"/></span>
+		                <span class="mui-tab-label">交党费</span>
+			      </a>
+			      <a  class="mui-tab-item" href="build.html">
+		                <span><img src="../img/redshop/icon5.png"/></span>
+		                <span class="mui-tab-label">成立组织</span>
+			      </a>
+			</nav>
+			<!--列表-->
+			<div class="part">
+				<div class="ti"><div class="redblock"></div>身边榜样</div>
+				<ul class="mui-table-view mynews">
+					<li class="mui-table-view-cell mui-media">
+						<a href="model.html">
+							<img class="mui-media-object mui-pull-left" src="../img/index/news1.png">
+							<div class="mui-media-body">
+								<div class="hd">幸福</div>
+								<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+							</div>
+							<div class="time">2018-02-09</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="model.html">
+							<img class="mui-media-object mui-pull-left" src="../img/index/news1.png">
+							<div class="mui-media-body">
+								<div class="hd">幸福</div>
+								<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							</div>
+							<div class="time">2018-02-09</div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+			<div class="part">
+				<div class="ti"><div class="redblock"></div>规范建设</div>
+				<ul class="mui-table-view mynews">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../img/index/news1.png">
+							<div class="mui-media-body">
+								<div class="hd">幸福</div>
+								<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+							</div>
+							<div class="time">2018-02-09</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../img/index/news1.png">
+							<div class="mui-media-body">
+								<div class="hd">幸福</div>
+								<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+							</div>
+							<div class="time">2018-02-09</div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<!--底部导航栏-->
+		<nav class="bottom-bar mui-bar mui-bar-tab">
+		      <a id="Tab1" class="mui-tab-item mui-active" href="../index.html">
+	                <span><img src="../img/index/bottom1.png" /></span>
+	                <span class="mui-tab-label">首页</span>
+		       </a>
+		      <a id="Tab2" class="mui-tab-item" href="redshop.html">
+	                <span><img src="../img/index/bottom2.png"/></span>
+	                <span class="mui-tab-label">红工坊</span>
+		       </a>
+		       <a class="mui-tab-item bottom3" href="">
+		           <img src="../img/index/bottom3.png" />
+		       </a>
+		      <a class="mui-tab-item" href="">
+	                <span><img src="../img/index/bottom4.png"/></span>
+	                <span class="mui-tab-label">生活圈</span>
+		       </a>
+		      <a  class="mui-tab-item" href="">
+	                <span><img src="../img/index/bottom5.png"/></span>
+	                <span class="mui-tab-label">我的</span>
+		      </a>       
+		</nav>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/app.js"></script>
+		<script>
+			mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+		</script>
+	</body>
+
+</html>

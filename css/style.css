@@ -7,6 +7,22 @@
 .lt {
 	float: left;
 }
+.tct{
+	text-align: center;
+}
+.red-btn{
+	margin: 20px auto 10px auto;
+	height: 50px;
+	line-height: 20px;
+	width: 200px;
+	background: #ae2d36;
+	box-shadow: 0px 3px 10px #ca888c;
+	border-radius: 25px;
+}
+.top{
+	position: relative;
+	z-index: 1000;
+}
 
 header.mui-bar {
 	background: url(../img/header.png);
@@ -167,6 +183,7 @@ header.mui-bar * {
 }
 
 /**** newsdetail ****/
+
 .newsdetail .newsimg img{
 	width: 100%;
 	margin: 0;
@@ -188,4 +205,40 @@ header.mui-bar * {
 }
 .newsdetail .mui-bar .mui-active{
 	color: #d01421;
+}
+
+/**** redshop ****/
+.redshop .banner img{
+	width: 100%;
+}
+.redshop .part{
+	background: #FFFFFF;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.redshop .part .ti{
+	padding: 10px 10px 0px 10px;
+	color: #666;
+}
+.redshop .part .redblock{
+	width: 5px;
+	height: 20px;
+	float: left;
+	background: #d01421;
+	margin-right: 5px;
+}
+.redshop .mui-table-view:before{
+	background: none;
+}
+.redshop .avatar{
+	width: 60px;
+	height: 60px;
+	float: left;
+	border-radius: 30px;
+	overflow: hidden;
+	margin: 10px;
+}
+.redshop .avatar img{
+	width: 100%;
+	z-index: 1000;
 }

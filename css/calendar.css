@@ -1,0 +1,153 @@
+/*初始化*/
+.mui-popup,.mui-popup-inner,.mui-popup-buttons,.mui-popup-button{
+	border-radius: 0 !important;
+}
+.calendar{
+	background: url(../img/index/checkin-back.png);
+	background-size: cover;
+	background-position:left top;
+}
+.calendar .mui-bar,.calendar .mui-content{
+	background: transparent !important;
+}
+.calendar .mui-bar{
+	position: absolute;
+}
+.calendar .circle{
+	width: 45%;
+	margin: 0 auto 90px auto;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 40px 0;
+	background: url(../img/index/checkin-circle.png);
+	background-size: cover;
+}
+.calendar .circle p{
+	color: #FFFFFF;
+}
+.calendar .circle p span{
+	color: #FFEAAA;
+	font-size: 1.2em;
+}
+.calendar .circle .mui-btn{
+	border: none;
+	border-radius: 20px;
+	padding: 3px 12px;
+	color: #d5000f;
+	box-shadow: 0px 5px 5px #cc666d;
+}
+.clearfix:after{
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	overflow:hidden;
+}
+.calendar .count{
+	padding-left: 20px;
+}
+.calendar .checkin-wrap{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	margin-top: 310px;
+	margin-bottom: 30px;
+}
+.calendar .checkin-btn{
+	margin: 0 auto;
+    width: 200px;
+    background: #d5000f;
+    box-shadow: 0px 3px 15px #cc666d;
+    border-radius: 25px;
+    border: none;
+    color: #FFFFFF;
+}
+.clearfix{
+	zoom:1;
+}
+/*日历*/
+.calendar-container{
+	width:calc(100% - 40px);
+	border-radius: 10px;
+	margin: 20px;
+	box-shadow: 0px 3px 15px #efb1b6;
+	font-size: 0.9em;
+}
+.calendar-title{
+	width:100%; 
+	height:45px;
+	color:#333;
+	background-color:#fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.calendar-month{
+	float:left;
+	width:20%;
+	height:45px;
+	text-align:center;
+	cursor:pointer;
+	line-height:45px;
+}
+.calendar-year{
+	float:left;
+	width:20%;
+	height:45px;
+	text-align:center;
+	cursor:pointer;
+	line-height:45px;
+}
+.calendar-prevyear,
+.calendar-prevmonth,
+.calendar-nextyear,
+.calendar-nextmonth{
+	float:left;
+	width:15%; 
+	height:45px;
+	text-align:center;
+	cursor:pointer;
+	line-height:45px;
+}
+.calendar-week{
+	width:100%;
+	height:45px;
+}
+.calendar-week div{
+	float:left; 
+	width:14.28%; 
+	height:45px; 
+	color:#313131; 
+	background-color:#fff;
+	text-align:center; 
+	line-height:45px; 
+	cursor:pointer;
+}
+.calendar-content{
+	width:100%;
+	background-color:#fff; 
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-bottom: 30px;
+}
+.calendar-content div{
+	float:left; 
+	width:14.28%; 
+	height: 40px;
+	line-height: 30px;
+	padding: 5px 0px;
+	background-color:#fff; 
+	color:#aaa; 
+	text-align:center; 
+	cursor:pointer;
+	border-radius: 10px;
+}
+.calendar-content .canChoose{
+	background-color:#fff;
+}
+.calendar-content .canChoose:hover{
+	color: #fff;
+	background-color:#d5000f;
+}
+.calendar-content div.today{
+	color:#d5000f;
+}
