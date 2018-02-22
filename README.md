@@ -1,2 +1,0 @@
-# PartyBuilding
-PartyBuilding-Mui Pages
