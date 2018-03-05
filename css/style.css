@@ -23,7 +23,23 @@
 	position: relative;
 	z-index: 1000;
 }
-
+.ipt{
+	border: none !important;
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+	height: auto !important;
+	text-align: right;
+}
+.textipt{
+	border: none !important;
+	padding: 0 !important;
+}
+.border1px{
+	border: 1px solid #DDDDDD;
+}
+.no-padding{
+	padding: 0 !important;
+}
 header.mui-bar {
 	background: url(../img/header.png);
 	background-size: cover;
@@ -241,4 +257,24 @@ header.mui-bar * {
 .redshop .avatar img{
 	width: 100%;
 	z-index: 1000;
+}
+.history_c{
+	height: 180px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.history_c img{
+	width: 100%;
+	height: 100%;
+}
+.history_t,.history_time,.history_text{
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	position: relative;
+	z-index: 1000;
+	top:-130px;
+}
+.history_time,.history_text{
+	font-size: 0.7em;
 }
