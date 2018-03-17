@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<style>
+			.mui-tab-item {
+				height: 30px !important;
+			}
+			.mui-bar-tab .mui-tab-item.mui-active{
+				border-bottom: 3px solid #ae2d36;
+			}
+		</style>
+	</head>
+	<body class="index">
+		<header class="mui-bar mui-bar-nav">
+			<a href="../servicestop.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">政策发布</h1>
+		</header>
+		<div class="mui-content">
+			<nav class="nav-bar mui-bar mui-bar-tab" style="border-bottom: none;">
+			      <a class="mui-tab-item mui-active" href="">
+		                <span class="mui-tab-label">企业</span>
+			      </a>
+			      <a class="mui-tab-item" href="publish_white.html">
+		                <span class="mui-tab-label">白领</span>
+			      </a>
+			</nav>
+			<ul class="mui-table-view mynews">
+				<li class="mui-table-view-cell mui-media">
+					<a href="index/newsdetail.html">
+						<img class="mui-media-object mui-pull-left" src="../../img/index/news1.png">
+						<div class="mui-media-body">
+							<div class="hd">幸福</div>
+							<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						</div>
+						<div class="time">2018-02-09</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../img/index/news1.png">
+						<div class="mui-media-body">
+							<div class="hd">幸福</div>
+							<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+						</div>
+						<div class="time">2018-02-09</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../img/index/news1.png">
+						<div class="mui-media-body">
+							<div class="hd">幸福</div>
+							<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						</div>
+						<div class="time">2018-02-09</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../img/index/news1.png">
+						<div class="mui-media-body">
+							<div class="hd">幸福</div>
+							<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						</div>
+						<div class="time">2018-02-09</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+	</script>
+</html>

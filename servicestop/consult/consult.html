@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<style>
+			.mui-tab-item {
+				height: 30px !important;
+			}
+			.mui-bar-tab .mui-tab-item.mui-active{
+				border-bottom: 3px solid #ae2d36;
+			}
+			.mui-table-view:before, .mui-table-view:after{
+				display: none;
+			}
+			.tic_s{
+				position: absolute;
+				display: none;
+				z-index: 10000;
+				top:20%;
+				left: 10%;
+				width: 80%;
+				background: #fff;
+				text-align: center;
+				padding: 40px;
+			}
+			.tic_s p{
+				color: #333;
+			}
+			.tic_s img{
+				width: 80px;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body class="index">
+		<header class="mui-bar mui-bar-nav">
+			<a href="../servicestop.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">咨询室</h1>
+		</header>
+		<div class="mui-content consult">
+			<div class="banner"><img src="../../img/servicestop/consult/banner.png"></div>
+			<ul class="mui-table-view discountlist">
+				<li id="ques" class="mui-table-view-cell no-padding">
+					<img src="../../img/servicestop/consult/pic1.png"/>
+				</li>
+				<li class="mui-table-view-cell no-padding">
+					<img src="../../img/servicestop/consult/pic2.png"/>
+				</li>
+				<li class="mui-table-view-cell no-padding">
+					<img src="../../img/servicestop/consult/pic3.png"/>
+				</li>
+			</ul>
+		</div>
+		<!-- 弹窗 -->
+		<div id="tic_s" class="tic_s">
+			<img src="../../img/servicestop/consult/info.png"/>
+			<p>您还没有咨询问题！</p>
+			<a href="ques.html"><button class="red-btn mui-btn mui-btn-block mui-btn-danger">一键咨询</button></a>
+		</div>
+		<div id="popup" class="mui-popup-backdrop mui-active" style="display: none;">
+		</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		(function($, doc) {
+				//控制弹出层显隐
+				var ques = doc.getElementById('ques');
+				var popup = doc.getElementById('popup');
+				var tic_s = doc.getElementById('tic_s');
+				ques.addEventListener('tap', function(event) {
+					tic_s.style.display='block';
+					popup.style.display='block';	
+				});
+				popup.addEventListener('tap', function(event) {
+					tic_s.style.display='none';
+					popup.style.display='none';
+				});
+			}(mui, document));
+	</script>
+</html>

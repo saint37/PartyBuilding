@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/icons-extra.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<style>
+			.tic_s{
+				position: absolute;
+				display: none;
+				z-index: 10000;
+				top:20%;
+				left: 10%;
+				width: 80%;
+				background: #fff;
+				text-align: center;
+				padding: 40px;
+			}
+			.tic_s p{
+				color: #333;
+			}
+			.tic_s img{
+				width: 80px;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body class="newsdetail">
+		<header class="mui-bar mui-bar-nav">
+			<a href="../discount/discount.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">信息完善</h1>
+		</header>
+		<div class="mui-content">
+			<div class="newsimg"><img src="../../img/servicestop/discount/pic1.png"/></div>
+			<div class="mui-content-padded">
+				<div class="title">优惠标题</div>
+				<div class="time">2018-2-1</div>
+				<div class="content">
+					介绍：喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵
+				</div>
+				<div class="time rt" style="border-left: none;">优惠券：10/20</div>
+				<div class="time" style="border-left: none;">积分：10分</div>
+			</div>
+			<button id='gettic' class="red-btn mui-btn mui-btn-block mui-btn-danger">领取优惠券</button>
+		</div>
+		<!-- 弹窗 -->
+		<div id="tic_s" class="tic_s">
+			<img src="../../img/servicestop/discount/success.png"/>
+			<p>您已成功领取优惠券！</p>
+			<p>请在我的优惠里面查看使用！</p>
+		</div>
+		<div id="popup" class="mui-popup-backdrop mui-active" style="display: none;">
+		</div>		
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		(function($, doc) {
+				//控制弹出层显隐
+				var gettic = doc.getElementById('gettic');
+				var popup = doc.getElementById('popup');
+				var tic_s = doc.getElementById('tic_s');
+				gettic.addEventListener('tap', function(event) {
+					tic_s.style.display='block';
+					popup.style.display='block';	
+				});
+				popup.addEventListener('tap', function(event) {
+					tic_s.style.display='none';
+					popup.style.display='none';
+				});
+			}(mui, document));		
+	</script>
+</html>

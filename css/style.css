@@ -278,3 +278,27 @@ header.mui-bar * {
 .history_time,.history_text{
 	font-size: 0.7em;
 }
+
+/**** servicestop ****/
+.mysearch{
+	margin: 10px;
+	margin-bottom: 0;
+	height: 34px;
+}
+.mysearch input{
+	margin-bottom: 0 !important;
+}
+.mui-icon-mic{
+	position: relative;
+	z-index: 100;
+	top: -30px;
+}
+.discountlist img{
+	width: 100%;
+}
+.discountlist .mui-table-view-cell:after{
+	background: none !important;
+}
+.consult .banner img{
+	width: 100%;
+}
