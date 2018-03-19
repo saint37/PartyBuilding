@@ -10,6 +10,12 @@
 .tct{
 	text-align: center;
 }
+.trt{
+	text-align: right;
+}
+.tlt{
+	text-align: left;
+}
 .red-btn{
 	margin: 20px auto 10px auto;
 	height: 50px;
@@ -301,4 +307,147 @@ header.mui-bar * {
 }
 .consult .banner img{
 	width: 100%;
+}
+
+/**** livecircle ****/
+.livecircle .mui-bar{
+	height: 150px;
+	padding: 0;
+}
+.wish .mui-media-body{
+	white-space: normal;
+}
+.wish .person,.wish .tt{
+	line-height: 1.5em;
+	font-size: 0.8em;
+	color: #bbb;
+}
+.wish .c{
+	margin-top: 5px;
+}
+.wish .imgs{
+	display: table;
+}
+.wish .imgs img{
+	width: 30%;
+	float: left;
+	margin-left: 5px;
+}
+.wish .doneflag{
+	background-image: url(../img/livecircle/wish/done.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 100;
+	width: 80px;
+	height: 60px;
+	right: 10px;
+	margin-top: 10px;
+}
+.wish .stepimg{
+	float: left;
+	width: 60px;
+}
+.building .ti.join{
+	color: #AE2D36;
+}
+.building .ti.top{
+	padding-bottom: 10px;
+	width: 70%;
+}
+.building .ti span{
+	font-size: 0.8em;
+	color: #bbb;
+	border-radius: 1em;
+	border: 1px solid #bbb;
+	padding: 0 3px;
+	margin-left: 5px;
+}
+.building .avatarlist{
+	overflow: auto;
+	padding: 0 10px;
+	border-top: 1px solid #ddd;
+}
+.building .mysearch input{
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 34px;
+    text-align: center;
+    border: 0;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,.1);
+}
+.building .usercomments .avatar{
+	margin: 0;
+	margin-right: 10px;
+	padding: 0;
+}
+.building .usercomments .time{
+	border: none;
+	margin: 0;padding: 0;
+}
+.building .usercomments .mui-ellipsis{
+	white-space: normal;
+}
+.shine .usercomments .perinfo{
+	height: 60px;
+}
+.shine .usercomments .perinfo .hd{
+	padding-top: 10px;
+	color: #e25c3e;
+}
+.shine .usercomments .c{
+	padding: 10px 0;
+	color: #666666;
+	font-size: 0.8em;
+}
+.shine .usercomments .items{
+	border-top: 1px solid #ddd;
+	color: #aaa;
+	font-size: 0.7em;
+	padding-top: 10px;
+}
+.shine .usercomments .items .item{
+	float: left;
+	width: 33%;
+}
+.shine .usercomments .items .item .mui-icon,.shine .usercomments .items .item .mui-icon-extra{
+	font-size: 1.5em !important;
+}
+.shine .pos{
+	padding-bottom: 10px;
+	color: #0190eb;
+	font-size: 0.7em;
+}
+.shine .pos .mui-icon{
+	font-size: 1em !important;
+	color: #0190eb;
+}
+.shine .pos1{
+	padding-bottom: 10px;
+	color: #aaa;
+	font-size: 0.7em;
+}
+.shine .pos1 .mui-icon{
+	font-size: 1em !important;
+	color: #aaa;
+}
+.shine .imgs{
+	display: table;
+	padding-bottom: 10px;
+}
+.shine .imgs img {
+    width: 30%;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.date .types{
+	padding-top: 10px;
+}
+.date .types button{
+	padding: 6px 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }

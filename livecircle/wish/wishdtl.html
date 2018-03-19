@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<style>
+			.mui-tab-item {
+				height: 30px !important;
+			}
+			.mui-bar-tab .mui-tab-item.mui-active{
+				border-bottom: 3px solid #ae2d36;
+			}
+		</style>
+	</head>
+	<body class="index">
+		<header class="mui-bar mui-bar-nav">
+			<a href="../livecircle.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">心愿清单</h1>
+			<button id='save' class=" mui-pull-right mui-btn-link"><span class="mui-icon mui-icon-plusempty"></span></button>
+		</header>
+		<div class="mui-content redshop">
+			<!--列表-->
+			<div class="part wish">
+				<div class="doneflag"></div> <!--根据是否完成，控制显隐-->
+				<div class="ti"><div class="redblock"></div>心愿标题</div>
+				<ul class="mui-table-view mynews">
+					<li class="mui-table-view-cell mui-media">
+						<a href=" ">
+							<div class="mui-media-body">
+								<div class="person">申请人</div>
+								<div class="tt">申请时间</div>
+								<p class="c">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+							</div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+			<div class="part wish">
+				<div class="ti"><div class="redblock"></div>联系方式</div>
+				<ul class="mui-table-view mynews">
+					<li class="mui-table-view-cell mui-media">
+						<a href=" ">
+							<div class="mui-media-body">
+								<div class="person">联系人</div>
+								<div class="tt">联系方式</div>
+							</div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+			<div class="part wish">
+				<div class="ti"><div class="redblock"></div>我们的故事</div>
+				<ul class="mui-table-view mynews">
+					<li class="mui-table-view-cell mui-media">
+						<a href=" ">
+							<div class="mui-media-body">
+								<p class="c">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+							</div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+			<div class="part wish">
+				<div class="ti"><div class="redblock"></div>认领感言</div>
+				<ul class="mui-table-view mynews">
+					<li class="mui-table-view-cell mui-media">
+						<a href=" ">
+							<div class="mui-media-body">
+								<p class="c">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？可是，打呼噜怎么办？</p>
+							</div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+			<div class="part wish">
+				<div class="ti"><div class="redblock"></div>心愿状态</div>
+				<ul class="mui-table-view mynews">
+					<li class="mui-table-view-cell mui-media">
+						<a href=" ">
+							<div class="mui-media-body"> <!--根据是否完成，控制显隐-->
+								<img class="stepimg" src="../../img/livecircle/wish/step.png"/>
+								<p class="c">2017-11-28 &ensp;提交了心愿</p>
+								<p class="c"></p>
+							</div>
+							<div class="mui-media-body">
+								<img class="stepimg" src="../../img/livecircle/wish/step.png"/>
+								<p class="c">2017-11-28 &ensp;审核了心愿</p>
+								<p class="c"></p>
+							</div>
+							<div class="mui-media-body">
+								<img class="stepimg" src="../../img/livecircle/wish/step.png"/>
+								<p class="c">2017-11-28 &ensp;申请了心愿</p>
+								<p class="c"></p>
+							</div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+			<!--根据是否完成，控制显隐-->
+			<button id='gettic' class="red-btn mui-btn mui-btn-block mui-btn-danger">我要认领</button>
+		</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+	</script>
+</html>
