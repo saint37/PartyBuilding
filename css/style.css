@@ -105,7 +105,14 @@ header.mui-bar * {
 	pointer-events: none;
 }
 
-
+.empty{
+	height: 45px;
+	width: 100%;
+	display: block;
+}
+.mui-input-row.mui-search.mysearch.mui-active:before{
+	top:25px;
+}
 /**** index ****/
 
 .index .bottom-bar {
@@ -450,4 +457,304 @@ header.mui-bar * {
 	padding: 6px 20px;
 	margin-right: 10px;
 	margin-bottom: 10px;
+}
+
+/**** personal ****/
+.personal .persona .blur {	
+	position: absolute;
+	top: 0;
+	width: 100%;
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+.personal .persona p{
+	position: relative;
+	color: white;
+}
+.personal .persona .avatar{
+	position: relative;
+	z-index: 100;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+}
+.personal .persona .edit{
+	background: black;
+	border-radius: 10px;
+	color: white;
+	position:relative;
+	z-index: 101;
+	left: 30px;
+	top:90px;
+}
+.personal .personlist img{
+	width: 20px;
+	margin-right: 5px;
+	float: left;
+}
+.personal .personlist p{
+	font-size: 16px;
+	float: left;
+	color: #666666;
+}
+.personal .myact .actstate{
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+.personal .collect .part{
+	background: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.personal .collect .thumbnail{
+	width: 60px;
+    height: 60px;
+    float: left;
+}
+.personal .collect .thumbnail img{
+	width: 100%;
+}
+.personal .collect .c{
+	height: 60px;
+	overflow: hidden;
+	padding-left: 10px;
+	color: #666666;
+	font-size: 0.8em;
+}
+.personal .collect .ori,.personal .collect .time{
+	float: left;
+	font-size: 0.6em;
+	color: #BBBBBB;
+	width: 80px;
+	padding-top: 5px;
+}
+.personal .myshine .date{
+	width: 20%;
+	float: left;
+}
+.personal .myshine .date h2,.personal .myshine .date span{
+	float: left;
+}
+.personal .myshine .date span{
+	margin-top: 15px;
+	padding-left: 2px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.personal .myshine .imgs{
+	width: 25%;
+	float: left;
+}
+.personal .myshine .imgs img{
+	width: 100%;
+}
+.personal .myshine .c{
+	width: 55%;
+	float: left;
+	font-size: 14px;
+	color: #888888;
+	padding-left: 5px;
+}
+.personal .myshine .picnum{
+	font-size: 12px;
+	color: #888888;
+	position: absolute;
+	bottom: 10px;
+}
+.personal .myshine .mui-table-view:before,.personal .myshine .mui-table-view:after{
+	background: none;
+}
+.personal .myshine a *{
+	color: initial;
+}
+.personal .myshinedtl img{
+	width: 100%; 
+	height: 100%; 
+	objec-fit: cover;
+}
+.personal .myshinedtl .mymsg{
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 100;
+	background: rgba(0,0,0,0.4);
+	color: white;
+	padding: 10px;
+}
+.personal .myshinedtl .mymsg .bref{
+	font-size: 0.9em;
+}
+.personal .myshinedtl .mymsg .items{
+	position: absolute;
+	bottom: 20px;
+	font-size: 0.9em;
+	width: 100%;
+	padding-right: 10px;
+}
+.personal .myshinedtl .mymsg .items .item{
+	padding-right: 10px;
+}
+.personal .myshinedtl .mymsg .items .item span{
+	font-size: 0.9em;
+	padding-right: 3px;
+}
+.personal .mybenefit .part{
+	overflow: auto;
+	margin: 10px;
+}
+.personal .mybenefit .part .tic{
+	width: 40%;
+	float: left;
+	position: relative;
+}
+.personal .mybenefit .part .tic h2{
+	color: white;
+	position: absolute;
+	top: 35px;
+	left: 30px;
+}
+.personal .mybenefit .part .tic img{
+	width: 100%;
+	display:block;
+}
+.personal .mybenefit .part .ticinfo{
+	width: 60%;
+	float: left;
+	padding: 10px;
+	height: 100px;
+	position: relative;
+}
+.personal .mybenefit .part .ticinfo p{
+	color: #666666;
+}
+.personal .mybenefit .part .ticinfo .date{
+	color: #BBBBBB;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: 5px;
+	width: 90%;
+}
+.personal .mybenefit .part .ticinfo button{
+	float: right;
+	border: 1px solid #d01421;
+	color: #D01421;
+	padding: 3px 8px;
+	border-radius: 10px;
+	font-size: 0.8em;
+}
+.personal .mybenefit .part .ticinfo .date img{
+	height: 100px;
+}
+.personal.whiteback,.personal .whiteback{
+	background: white;
+}
+.personal .point{
+	position: relative;
+}
+.personal .point img{
+	width: 100%;
+}
+.personal .point .circle{
+	height: 120px;
+	width: 120px;
+	border: 2px solid #D01421;
+	border-radius: 60px;
+	position: absolute;
+	top: calc(50% - 60px);
+	left: calc(50% - 60px);
+	text-align: center;
+	box-shadow: 0px 3px 10px #ca888c;
+}
+.personal .point .circle h1{
+	margin-top: 40px;
+	color: #D01421;
+}
+.personal .pointdtl{
+	background: white;
+}
+.personal .pointdtl .ques{
+	float: right;
+	color: blue;
+}
+.personal .pointdtl .title{
+	margin-bottom: 10px;
+}
+.personal .mui-table-view:before,.personal .mui-table-view:after{
+	background: none;
+}
+.personal .wish{
+	border: 1px dashed #BBBBBB;
+}
+.personal .tic_s{
+	padding: 25px;
+	text-align: left;
+}
+.personal .rank{
+	background: #efeff4;
+}
+.personal .rank .circle,.personal .rank .circle .avatar{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: calc(50% - 40px);
+	left: calc(50% - 30px);
+	box-shadow: none;
+	border-radius: 30px;
+	z-index: 110;
+	border: none;
+}
+.personal .rank .circle .avatar{
+	z-index: 100;
+	overflow: hidden;
+	border: 2px solid orange;
+}
+.personal .rank .circle .info{
+	position: absolute;
+	top: 60px;
+	left: 10px;
+}
+.personal .rank .circle .name{
+	margin: 0;
+}
+.personal .rank .circle .pt{
+	color: orange;
+	font-size: 0.7em;
+}
+.personal .rank .circle .crown{
+	position: absolute;
+	top: -35px;
+	left: -5px;
+	width: 30px;
+}
+.personal .rank .circle.silver{
+	left: calc(20% - 30px);
+	top: calc(50% - 20px);
+	width: 50px;
+	height: 50px;
+}
+.personal .rank .circle.bronze{
+	left: calc(80% - 30px);
+	top: calc(50% - 20px);
+	width: 50px;
+	height: 50px;
+}
+.personal .rank .circle.silver .avatar,.personal .rank .circle.bronze .avatar{
+	width: 50px;
+	height: 50px;
+	top: calc(50% - 30px);
+	left: calc(50% - 20px);
+	border: 2px solid #bbb;
+}
+.personal .rank .circle.silver .crown,
+.personal .rank .circle.bronze .crown{
+	top: -25px;
+}
+.personal .rank .circle.silver .info,
+.personal .rank .circle.bronze .info{
+	top: 50px;
 }

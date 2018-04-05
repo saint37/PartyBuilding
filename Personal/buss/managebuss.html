@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<style>
+			.mui-tab-item {
+				height: 30px !important;
+			}
+			.mui-bar-tab .mui-tab-item.mui-active{
+				border-bottom: 3px solid #ae2d36;
+			}
+			.more{
+				position: absolute;
+				background: white;
+				right: 5px;
+				top: 50px;
+				z-index: 999;
+				width: 80px;
+				border-radius: 8px;
+				text-align: center;
+				padding-top: 5px;
+				box-shadow: 0px 3px 10px #888;
+				display: none;
+			}
+			.more p{
+				margin-bottom: 5px;
+			}
+			.more p a{
+				color: #8f8f94;
+			}
+			.more .divider{
+				border-bottom: 1px solid #ddd;
+				height: 1px;
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body class="index">
+		<header class="mui-bar mui-bar-nav">
+			<a href="zzfg.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">商家管理</h1>
+			<button id="morebtn" class=" mui-pull-right mui-btn-link"><span class="mui-icon mui-icon-plusempty"></span></button>
+		</header>
+		<div class="mui-content">
+			<nav class="nav-bar mui-bar mui-bar-tab" style="border-bottom: none;">
+			      <a class="mui-tab-item mui-active" href="">
+		                <span class="mui-tab-label">已发布</span>
+			      </a>
+			      <a class="mui-tab-item" href="managebussed.html">
+		                <span class="mui-tab-label">已使用</span>
+			      </a>
+			</nav>
+			<ul id="OA_task_1" class="mui-table-view">
+				<li class="mui-table-view-cell no-padding history_c">
+					<div class="mui-slider-handle">
+						<div class="history_c"><img src="../../img/redshop/his1.png"></div>
+						<div class="history_t">标题内容</div>
+						<div class="history_time">2018-03-07</div>
+						<div class="history_text">简介</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell no-padding history_c">
+					<div class="mui-slider-handle">
+						<div class="history_c"><img src="../../img/redshop/his2.png"></div>
+						<div class="history_t">标题内容</div>
+						<div class="history_time">2018-03-07</div>
+						<div class="history_text">简介</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="more" class="more">
+			<p>扫一扫</p>
+			<div class="divider"></div>
+			<p><a href="publishact.html">发布活动</a></p>
+		</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		(function($, doc) {
+			var moreButton = doc.getElementById('morebtn');
+			var moreDiv = doc.getElementById('more');
+			moreButton.addEventListener('tap', function(event) {
+				if(moreDiv.style.display == 'block'){
+					moreDiv.style.display='none';
+				}
+				else{
+					moreDiv.style.display='block';
+				}
+			});
+		}(mui, document));
+	</script>
+</html>

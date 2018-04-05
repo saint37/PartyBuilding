@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<style>
+			.mui-tab-item {
+				height: 30px !important;
+			}
+			.mui-bar-tab .mui-tab-item.mui-active{
+				border-bottom: 3px solid #ae2d36;
+			}
+		</style>
+	</head>
+	<body class="index personal">
+		<header class="mui-bar mui-bar-nav">
+			<a href="zzfg.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">收藏</h1>
+			<!--<button class=" mui-pull-right mui-btn-link">选择</button>-->
+		</header>
+		<div class="mui-content collect">
+			<div class="mui-input-row mui-search mysearch">
+					<input type="search" class="mui-input-clear" placeholder="">
+					<span class="mui-icon mui-icon-mic rt"></span>
+			</div>
+			<div class="part">
+				<ul id="OA_task_1" class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle">
+							<div class="thumbnail">
+								<img src="../../img/avatar/wechat.jpg" />
+							</div>
+							<div class="c">
+								介绍介绍介绍介绍介绍介绍介绍介绍介绍
+							</div>
+							<div class="ori">这里显示来源</div>
+							<div class="time">这里显示时间</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="part">
+				<ul id="OA_task_1" class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle">
+							<div class="thumbnail">
+								<img src="../../img/avatar/wechat.jpg" />
+							</div>
+							<div class="c">
+								介绍介绍介绍介绍介绍介绍介绍介绍介绍
+							</div>
+							<div class="ori">这里显示来源</div>
+							<div class="time">这里显示时间</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="part">
+				<ul id="OA_task_1" class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle">
+							<div class="thumbnail">
+								<img src="../../img/avatar/wechat.jpg" />
+							</div>
+							<div class="c">
+								介绍介绍介绍介绍介绍介绍介绍介绍介绍
+							</div>
+							<div class="ori">这里显示来源</div>
+							<div class="time">这里显示时间</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		(function($, doc) {
+			//第一个demo，拖拽后显示操作图标，点击操作图标删除元素；
+				$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					mui.confirm('确认删除该条记录？', 'Hello MUI', btnArray, function(e) {
+						if (e.index == 0) {
+							li.parentNode.removeChild(li);
+						} else {
+							setTimeout(function() {
+								$.swipeoutClose(li);
+							}, 0);
+						}
+					});
+				});
+				var btnArray = ['确认', '取消'];
+		}(mui, document));
+	</script>
+</html>

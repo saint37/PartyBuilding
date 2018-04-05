@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a href="../login.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人信息</h1>
+			<button id='save' class=" mui-pull-right mui-btn-link">保存</button>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						用户头像
+						<div class="listinfo redshop">
+							<div class="avatar" style="float:none;margin: 10px auto;">
+								<img src="../img/avatar/wechat.jpg">
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						用户名<div class="listinfo">冉</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						出生年月<div class="listinfo"></div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						所在楼宇<div class="listinfo"</div>
+					</a>
+				</li>
+				<li class="mui-table-view-divider"></li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						公司<div class="listinfo">未设置</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						职务<div class="listinfo">未设置</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						是否党员<div class="listinfo"></div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						手机号<div class="listinfo">未设置</div>
+					</a>
+				</li>
+				<li class="mui-table-view-divider"></li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						密码修改
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</html>

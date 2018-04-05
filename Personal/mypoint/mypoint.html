@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/icons-extra.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<style>
+			.tic_s{
+				position: absolute;
+				display: none;
+				z-index: 10000;
+				top:20%;
+				left: 10%;
+				width: 80%;
+				background: #fff;
+				text-align: left;
+				padding: 25px;
+			}
+			.tic_s p{
+				color: #333;
+			}
+			.tic_s img{
+				width: 80px;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body class="personal whiteback">
+		<header class="mui-bar mui-bar-nav">
+			<a href="../discount/discount.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的积分</h1>
+		</header>
+		<div class="mui-content whiteback">
+			<div class="point">
+				<img src="../../img/personal/point/back.png"/>
+				<div class="circle"><h1>370</h1></div>
+			</div>
+			<div class="mui-content-padded pointdtl">
+				<div id='gettic' class="ques"><span class="mui-icon mui-icon-help"></span></div>
+				<div class="title tct">--- 积分详情 ---</div>
+				<div class="part wish">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href=" ">
+								<div class="mui-media-body"> <!--根据是否完成，控制显隐-->
+									<img class="stepimg" src="../../img/livecircle/wish/step.png"/>
+									<p class="c">2017-11-28 &ensp;提交了心愿</p>
+									<p class="c"></p>
+								</div>
+								<div class="mui-media-body">
+									<img class="stepimg" src="../../img/livecircle/wish/step.png"/>
+									<p class="c">2017-11-28 &ensp;审核了心愿</p>
+									<p class="c"></p>
+								</div>
+								<div class="mui-media-body">
+									<img class="stepimg" src="../../img/livecircle/wish/step.png"/>
+									<p class="c">2017-11-28 &ensp;申请了心愿</p>
+									<p class="c"></p>
+								</div>
+							</a>
+						</li>
+					</ul>				
+				</div>
+			</div>
+		</div>
+		<!-- 弹窗 -->
+		<div id="tic_s" class="tic_s">
+			<p style="font-weight: bold;text-align: center;">积分规则</p>
+			<p>1.规则积分规则积分规则积分规则积分规则积分</p>
+			<p>2.规则积分规则积分规则积分规则积分规则积分</p>
+			<p>3.规则积分规则积分规则积分规则积分规则积分</p>
+		</div>
+		<div id="popup" class="mui-popup-backdrop mui-active" style="display: none;">
+		</div>		
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		(function($, doc) {
+				//控制弹出层显隐
+				var gettic = doc.getElementById('gettic');
+				var popup = doc.getElementById('popup');
+				var tic_s = doc.getElementById('tic_s');
+				gettic.addEventListener('tap', function(event) {
+					tic_s.style.display='block';
+					popup.style.display='block';	
+				});
+				popup.addEventListener('tap', function(event) {
+					tic_s.style.display='none';
+					popup.style.display='none';
+				});
+			}(mui, document));		
+	</script>
+</html>
